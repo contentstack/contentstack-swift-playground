@@ -1,4 +1,3 @@
-//:[Previous](@previous)
 /*:
 ---
  # Query Guide
