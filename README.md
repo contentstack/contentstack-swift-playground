@@ -32,5 +32,11 @@ Here we can try advanced queries such as:
 - orderByAscending
 - exceptFields
 
+### Image Delivery API
+Here we can image optimization such as:
+- resize
+- crop
+- trim
+
 ### Sample News App
 This section provides a sample iOS news application. It helps you understand how to fetch the content/images and show them in UITableView.

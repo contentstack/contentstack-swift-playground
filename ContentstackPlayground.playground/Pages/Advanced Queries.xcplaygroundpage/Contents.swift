@@ -30,11 +30,10 @@ print(contentTypeObj)
 //consider '***REMOVED***' is uid of an entry of 'news' contenttype
 var entryObj:Entry = contentTypeObj.entry(withUID:"***REMOVED***")
 
-entryObj.fetch { (error) in
+entryObj.fetch({ (responseType, error) in
     //error if exists then use 'error' object for details
-        print("Entry: \(entryObj.createdAt)")
-}
-
+    print("Entry: \(entryObj.createdAt)")
+})
 /*:
  ### Get a multiple entries
  This query lets you fetch multiple entries of a particular content type. The example snippet given below fetches entries by their UIDs from the content type 'news'.

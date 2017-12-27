@@ -29,12 +29,10 @@ print(contentTypeObj)
 //consider '***REMOVED***' is uid of an entry of 'news' contenttype
 var entryObj:Entry = contentTypeObj.entry(withUID:"***REMOVED***")
 
-entryObj.fetch { (error) in
-    //error if exists then use 'error' object for details
-//    print("resposetype: \(resposetype)")
+entryObj.fetch { (responseTyep, error) in
     print("Entry: \(entryObj.contentTypeName)")
-}
 
+}
 /*:
  ## Get a multiple entries
  This query lets you fetch multiple entries of a particular content type. The example snippet given below fetches entries by their UIDs from the content type 'news'.
@@ -53,5 +51,10 @@ newsQuery.find { (type, res, error) in
  So far, we have covered how to get multiple entries of a content type. Let us now look at the list of Advanced Queries that enable you to fetch specific entries based on certain conditions.
  
 - [**View Advanced Queries**](Advanced%20Queries)
+ 
+ We also have Image Delivery API. You can try
+
+- [**Image Delivery API**](Image%20Delivery%20API)
+
  
  */

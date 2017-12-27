@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		37F4C5BCE9FF38C67FC6DC86 /* Pods_ContentstackPlayground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB7C70D0F20B3FD63AAB3CB /* Pods_ContentstackPlayground.framework */; };
+		6F7A44C41FF3B824006B8BA3 /* ContentstackPlayground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7A44C31FF3B824006B8BA3 /* ContentstackPlayground.swift */; };
 		EA0E725F1E28D1FA009AFDCD /* ContentstackPlayground.h in Headers */ = {isa = PBXBuildFile; fileRef = EA0E725D1E28D1FA009AFDCD /* ContentstackPlayground.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EA118A121E30F59C006946FF /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = EA118A111E30F59C006946FF /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F7A44C31FF3B824006B8BA3 /* ContentstackPlayground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentstackPlayground.swift; sourceTree = "<group>"; };
 		89BBC685598E1C70BC480A93 /* Pods-ContentstackPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContentstackPlayground.release.xcconfig"; path = "Pods/Target Support Files/Pods-ContentstackPlayground/Pods-ContentstackPlayground.release.xcconfig"; sourceTree = "<group>"; };
 		CCB7C70D0F20B3FD63AAB3CB /* Pods_ContentstackPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContentstackPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD498CDC1ADF28BA441EF824 /* Pods-ContentstackPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContentstackPlayground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ContentstackPlayground/Pods-ContentstackPlayground.debug.xcconfig"; sourceTree = "<group>"; };
@@ -46,6 +47,7 @@
 		EA0E72501E28D1FA009AFDCD = {
 			isa = PBXGroup;
 			children = (
+				6F7A44C31FF3B824006B8BA3 /* ContentstackPlayground.swift */,
 				EA118A111E30F59C006946FF /* README.md */,
 				EA0E725C1E28D1FA009AFDCD /* ContentstackPlayground */,
 				EA0E725B1E28D1FA009AFDCD /* Products */,
@@ -124,6 +126,7 @@
 				TargetAttributes = {
 					EA0E72591E28D1FA009AFDCD = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -177,13 +180,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ContentstackPlayground-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -193,7 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA118A121E30F59C006946FF /* README.md in Sources */,
+				6F7A44C41FF3B824006B8BA3 /* ContentstackPlayground.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +309,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DD498CDC1ADF28BA441EF824 /* Pods-ContentstackPlayground.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -314,6 +321,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikhilgohil11.ContentstackPlayground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -322,6 +330,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89BBC685598E1C70BC480A93 /* Pods-ContentstackPlayground.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;

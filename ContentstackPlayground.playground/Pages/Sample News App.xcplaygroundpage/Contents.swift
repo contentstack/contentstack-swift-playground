@@ -143,7 +143,7 @@ class TableViewController: UITableViewController {
 }
 
 let tableViewController = TableViewController()
-tableViewController.title = "News"
+tableViewController.title = "News..."
 let navigationController = UINavigationController(rootViewController: tableViewController)
 
 navigationController.view.frame.size = CGSize(width: 320, height: 400)
