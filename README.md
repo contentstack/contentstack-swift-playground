@@ -1,8 +1,8 @@
-# Built.io  Contentstack iOS SDK Playground
+# Contentstack iOS SDK Playground
 Introducing playground for Content Delivery APIs of iOS SDK. This playground lets you experiment with the basic as well as advanced Content Delivery queries.
 
 ### What will I learn?
-In general, you will get to learn how to use the content delivery queries of Built.io  Contentstack’s iOS SDK. In particular, you will learn the following:
+In general, you will get to learn how to use the content delivery queries of Contentstack’s iOS SDK. In particular, you will learn the following:
 - Basic queries
 - Advanced queries
 - Fetching data and showing it in UITableView
@@ -12,7 +12,7 @@ In general, you will get to learn how to use the content delivery queries of Bui
 - CocoaPods
 
 ### Installation and setup
-1. Clone this repo `git clone https://github.com/builtio-contentstack/contentstack-swift-playground.git`
+1. Clone this repo `git clone https://github.com/contentstack/contentstack-swift-playground.git`
 1. Now go to the cloned repo project directory
 1. Run `pod install`
 1. Open 'ContentstackPlayground.xcworkspace' with Xcode

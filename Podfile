@@ -5,7 +5,7 @@ use_frameworks!
 
 target 'ContentstackPlayground' do
     
-    pod 'Contentstack', :git => 'https://github.com/builtio-contentstack/contentstack-ios.git'
+    pod 'Contentstack'
 
 end
 

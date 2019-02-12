@@ -1,21 +1,16 @@
 PODS:
-  - Contentstack (3.1.0)
+  - Contentstack (3.4.0)
 
 DEPENDENCIES:
-  - Contentstack (from `https://github.com/builtio-contentstack/contentstack-ios.git`)
+  - Contentstack
 
-EXTERNAL SOURCES:
-  Contentstack:
-    :git: https://github.com/builtio-contentstack/contentstack-ios.git
-
-CHECKOUT OPTIONS:
-  Contentstack:
-    :commit: 7f58dfbe9937c4fffa3117691d63282804c81eb8
-    :git: https://github.com/builtio-contentstack/contentstack-ios.git
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Contentstack
 
 SPEC CHECKSUMS:
-  Contentstack: 9711033028378aa478b8d526fbefe9b55afd2890
+  Contentstack: e270cfa6b6ddae4fa67adf06eca68190cd7aa768
 
-PODFILE CHECKSUM: 46afc0b82e0582944ffd3c3291cc63b719a1c901
+PODFILE CHECKSUM: f97b946ce65a11822406901a6bb867a50749b451
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.6.0.rc.2

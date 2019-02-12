@@ -1,7 +1,7 @@
 /*:
 ---
  # Query Guide
- Queries are requests that you can send to Built.io Contentstack. This section of our Guide explains how to write queries that will let you fetch exactly what you are looking for. The following queries are accompanied by examples to help you understand them better.
+ Queries are requests that you can send to Contentstack. This section of our Guide explains how to write queries that will let you fetch exactly what you are looking for. The following queries are accompanied by examples to help you understand them better.
  
 ## Initialization
  To initialize, you will need to specify the stack's API Key, Access Token, and Environment's name.

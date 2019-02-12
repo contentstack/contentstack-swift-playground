@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <AFNetworking/AFNetworking.h>
+
 
 //! Project version number for ContentstackPlayground.
 FOUNDATION_EXPORT double ContentstackPlaygroundVersionNumber;
