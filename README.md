@@ -8,7 +8,7 @@ In general, you will get to learn how to use the content delivery queries of Con
 - Fetching data and showing it in UITableView
 
 ### Prerequisites
-- Xcode 8.0 and later and Mac OS X 10.11.5 and later
+- Xcode 10.1 and later and Mac OS X 10.14.0 and later
 - CocoaPods
 
 ### Installation and setup
