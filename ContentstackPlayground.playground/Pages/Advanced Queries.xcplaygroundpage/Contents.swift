@@ -11,8 +11,8 @@ The snippet given below initializes your iOS SDK.
 import Contentstack
 import PlaygroundSupport
 
-let AccessToken = "***REMOVED***"
-let APIKEY = "***REMOVED***"
+let AccessToken = "blt0c4300391e033d4a59eb2857"
+let APIKEY = "blt920bb7e90248f607"
 let EnvironmentName = "production"
 
 PlaygroundPage.current.needsIndefiniteExecution = true
@@ -22,13 +22,13 @@ print(stack)
 
 /*:
  ## Get a single entry
- The example snippet given below lets you retrieve a single entry ("***REMOVED***") from the 'news' content type.
+ The example snippet given below lets you retrieve a single entry ("bltf06a192f9366d67f") from the 'news' content type.
  */
 var contentTypeObj:ContentType = stack.contentType(withName:"news")
 print(contentTypeObj)
 
-//consider '***REMOVED***' is uid of an entry of 'news' contenttype
-var entryObj:Entry = contentTypeObj.entry(withUID:"***REMOVED***")
+//consider 'bltf06a192f9366d67f' is uid of an entry of 'news' contenttype
+var entryObj:Entry = contentTypeObj.entry(withUID:"bltf06a192f9366d67f")
 
 entryObj.fetch({ (responseType, error) in
     //error if exists then use 'error' object for details

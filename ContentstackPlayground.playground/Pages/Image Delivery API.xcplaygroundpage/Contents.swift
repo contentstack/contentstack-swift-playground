@@ -14,8 +14,8 @@
 import Contentstack
 import PlaygroundSupport
 
-let AccessToken = "***REMOVED***"
-let APIKEY = "***REMOVED***"
+let AccessToken = "blt0c4300391e033d4a59eb2857"
+let APIKEY = "blt920bb7e90248f607"
 let EnvironmentName = "production"
 
 PlaygroundPage.current.needsIndefiniteExecution = true
