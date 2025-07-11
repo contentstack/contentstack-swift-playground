@@ -19,7 +19,7 @@ on:
 jobs:
   analyze:
     name: Analyze
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     permissions:
       actions: read
       contents: read
@@ -34,7 +34,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
@@ -65,4 +65,4 @@ jobs:
     #   ./location_of_script_within_repo/buildscript.sh
 
     - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@v2
+      uses: github/codeql-action/analyze@v3
