@@ -14,8 +14,8 @@
 import Contentstack
 import PlaygroundSupport
 
-let AccessToken = "blt0c4300391e033d4a59eb2857"
-let APIKEY = "blt920bb7e90248f607"
+let AccessToken = "delivery_token"
+let APIKEY = "api_key"
 let EnvironmentName = "production"
 
 PlaygroundPage.current.needsIndefiniteExecution = true
@@ -34,7 +34,7 @@ func getDataFromUrl(url: URL, completion: @escaping (Data?, URLResponse?, Error?
 /*:
  ### Image URL
  */
-let imageURL: String = "https://images.contentstack.io/v3/assets/blteae40eb499811073/bltc5064f36b5855343/59e0c41ac0eddd140d5a8e3e/download";
+let imageURL: String = "https://images.contentstack.io/v3/assets/asset_uid/dummy_id/59e0c41ac0eddd140d5a8e3e/download";
 /*:
  ## Automate Optimization
  The auto parameter lets you enable the functionality that automates certain image optimization features. [more](@https://www.contentstack.com/docs/apis/image-delivery-api/#automate-optimization)
@@ -334,7 +334,7 @@ getDataFromUrl(url: URL(string: orientationUrl)!) { data, response, error in
  ### Overlay image
  */
 let overlayUrl:String = stack.imageTransform(withUrl: imageURL, andParams: [
-    "overlay":"/v3/assets/blteae40eb499811073/bltb21dacdd20d0e24c/59e0c401462a293417405f34/download",
+    "overlay":"/v3/assets/asset_uid/dummy_id/59e0c401462a293417405f34/download",
     ]);
 print(overlayUrl)
 getDataFromUrl(url: URL(string: overlayUrl)!) { data, response, error in
@@ -348,7 +348,7 @@ getDataFromUrl(url: URL(string: overlayUrl)!) { data, response, error in
  ### Align overlay
  */
 let overlayAndAlingUrl:String = stack.imageTransform(withUrl: imageURL, andParams: [
-    "overlay":"/v3/assets/blteae40eb499811073/bltb21dacdd20d0e24c/59e0c401462a293417405f34/download",
+    "overlay":"/v3/assets/asset_uid/dummy_id/59e0c401462a293417405f34/download",
     "overlay-align":"left,bottom",
     ]);
 print(overlayAndAlingUrl)
@@ -363,7 +363,7 @@ getDataFromUrl(url: URL(string: overlayAndAlingUrl)!) { data, response, error in
  ### Repeat overlay horizontally
  */
 let overlayRepeatHorizontally:String = stack.imageTransform(withUrl: imageURL, andParams: [
-    "overlay":"/v3/assets/blteae40eb499811073/bltb21dacdd20d0e24c/59e0c401462a293417405f34/download",
+    "overlay":"/v3/assets/asset_uid/dummy_id/59e0c401462a293417405f34/download",
     "overlay-repeat":"x",
     ]);
 print(overlayAndAlingUrl)
@@ -378,7 +378,7 @@ getDataFromUrl(url: URL(string: overlayAndAlingUrl)!) { data, response, error in
  ### Repeat overlay vertically
  */
 let overlayRepeatVertically:String = stack.imageTransform(withUrl: imageURL, andParams: [
-    "overlay":"/v3/assets/blteae40eb499811073/bltb21dacdd20d0e24c/59e0c401462a293417405f34/download",
+    "overlay":"/v3/assets/asset_uid/dummy_id/59e0c401462a293417405f34/download",
     "overlay-repeat":"x",
     ]);
 print(overlayRepeatVertically)
@@ -393,7 +393,7 @@ getDataFromUrl(url: URL(string: overlayRepeatVertically)!) { data, response, err
  ### Repeat overlay vertically and horizontally
  */
 let overlayRepeatHorizontallyVertically:String = stack.imageTransform(withUrl: imageURL, andParams: [
-    "overlay":"/v3/assets/blteae40eb499811073/bltb21dacdd20d0e24c/59e0c401462a293417405f34/download",
+    "overlay":"/v3/assets/asset_uid/dummy_id/59e0c401462a293417405f34/download",
     "overlay-repeat":"both",
     ]);
 print(overlayRepeatHorizontallyVertically)
@@ -408,7 +408,7 @@ getDataFromUrl(url: URL(string: overlayRepeatHorizontallyVertically)!) { data, r
  ### Set overlay width
  */
 let overlayWidthURL:String = stack.imageTransform(withUrl: imageURL, andParams: [
-    "overlay":"/v3/assets/blteae40eb499811073/bltb21dacdd20d0e24c/59e0c401462a293417405f34/download",
+    "overlay":"/v3/assets/asset_uid/dummy_id/59e0c401462a293417405f34/download",
     "overlay-width":100,
     ]);
 print(overlayWidthURL)
@@ -423,7 +423,7 @@ getDataFromUrl(url: URL(string: overlayWidthURL)!) { data, response, error in
 ### Set overlay height
 */
 let overlayHeightURL:String = stack.imageTransform(withUrl: imageURL, andParams: [
-    "overlay":"/v3/assets/blteae40eb499811073/bltb21dacdd20d0e24c/59e0c401462a293417405f34/download",
+    "overlay":"/v3/assets/asset_uid/dummy_id/59e0c401462a293417405f34/download",
     "overlay-height":150,
     ]);
 print(overlayHeightURL)

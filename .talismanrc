@@ -1,5 +1,17 @@
 fileignoreconfig:
 - filename: .github/workflows/secrets-scan.yml
+- filename: Pods/Contentstack/README.md
+  checksum: dabc4bd93f363e733b3585c1a44cdda95e9476e2d4fdbb4584f9288cb1e834e3
+- filename: ContentstackPlayground.playground/Pages/Image Delivery API.xcplaygroundpage/Contents.swift
+  checksum: 8c01fdac9a03f315073a30e037775e6ef6f2016a8df79349cc86141a5ed1fa5d
+- filename: ContentstackPlayground.playground/Pages/Sample News App.xcplaygroundpage/Contents.swift
+  checksum: f4df3d7667dc29c97f7a054a5475926bef4ff8462faef4032677c07223935060
+- filename: ContentstackPlayground.playground/Sources/CSExtensions.swift
+  checksum: 8f117756568f2ff08d488ee4e4c3135b968b4c2bb9fb77436841e6136c3c0912
+- filename: ContentstackPlayground.playground/Pages/Basic Query .xcplaygroundpage/Contents.swift
+  checksum: cc8e48e382cc0db40bf1d3608893b72d2020b302e7007019a575a8f964ae7851
+- filename: ContentstackPlayground.playground/Pages/Advanced Queries.xcplaygroundpage/Contents.swift
+  checksum: b4952c3d5f2897769b8b8d3fc0a67c446dab6abcb480e0cc4c4e90e904d66b9a
   ignore_detectors:
     - filecontent
 version: "1.0"

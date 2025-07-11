@@ -11,8 +11,8 @@
 import Contentstack
 import PlaygroundSupport
 
-let AccessToken = "blt0c4300391e033d4a59eb2857"
-let APIKEY = "blt920bb7e90248f607"
+let AccessToken = "delivery_token"
+let APIKEY = "api_key"
 let EnvironmentName = "production"
 
 PlaygroundPage.current.needsIndefiniteExecution = true
@@ -21,13 +21,13 @@ let stack:Stack = Contentstack.stack(withAPIKey: APIKEY, accessToken: AccessToke
 print(stack)
 /*:
  ## Get a single entry
- The example snippet given below lets you retrieve a single entry ("bltf06a192f9366d67f") from the 'news' content type.
+ The example snippet given below lets you retrieve a single entry ("entry_uid") from the 'news' content type.
  */
 var contentTypeObj:ContentType = stack.contentType(withName:"news")
 print(contentTypeObj)
 
-//consider 'bltf06a192f9366d67f' is uid of an entry of 'news' contenttype
-var entryObj:Entry = contentTypeObj.entry(withUID:"bltf06a192f9366d67f")
+//consider 'entry_uid' is uid of an entry of 'news' contenttype
+var entryObj:Entry = contentTypeObj.entry(withUID:"entry_uid")
 
 entryObj.fetch { (responseTyep, error) in
     print("Entry: \(entryObj.contentTypeName)")

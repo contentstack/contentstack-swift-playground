@@ -25,8 +25,8 @@ public extension UIImageView {
 //import Foundation
 //
 //
-//let AccessToken = "blt0c4300391e033d4a59eb2857"
-//let APIKEY = "blt920bb7e90248f607"
+//let AccessToken = "delivery_token"
+//let APIKEY = "api_key"
 //let EnvironmentName = "production"
 //
 //public class Contentstack: NSObject {
