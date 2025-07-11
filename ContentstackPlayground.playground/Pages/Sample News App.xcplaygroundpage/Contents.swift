@@ -4,8 +4,8 @@ import Foundation
 import Contentstack
 import PlaygroundSupport
 
-let AccessToken = "blt0c4300391e033d4a59eb2857"
-let APIKEY = "blt920bb7e90248f607"
+let AccessToken = "delivery_token"
+let APIKEY = "api_key"
 let EnvironmentName = "production"
 
 PlaygroundPage.current.needsIndefiniteExecution = true
