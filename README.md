@@ -1,3 +1,6 @@
+> [!WARNING]
+  **This repo is deprecated and no longer maintained. Security updates are not supported. We recommend avoiding its use.** We recommend viewing our latest [Kickstarts](https://www.contentstack.com/docs/developers/kickstarts).
+  
 # Contentstack iOS SDK Playground
 Introducing playground for Content Delivery APIs of iOS SDK. This playground lets you experiment with the basic as well as advanced Content Delivery queries.
 
